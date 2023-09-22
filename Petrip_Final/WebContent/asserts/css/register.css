@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'font-name';
+  /*font 이름*/
+  font-style: 'normal';
+  /* font 스타일 정의 (기울임, 일반) */
+  font-weight: 400;
+  /* font 굵기 정의 */
+  /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+  src: url(../font/YEONGDEOK\ HAEPARANG.TTF);
+  /* IE9 Compat Modes */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* header 태그 안에 CSS 속성 */
+header {
+  height: 70px;
+  background-color: rgb(133, 179, 234);
+  color: white;
+  line-height: 70px;
+  padding: 0px 30px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  margin-right: 10px;
+}
+
+.content-user-list h1 {
+  text-align: center;
+}
+
+.login-page {
+  width: 1000px;
+  padding: 7% 0 0;
+  margin: auto;
+
+}
+
+.login-page h1 {
+  margin-left: 430px;
+  margin-bottom: 50px;
+  /* position: relative; */
+
+}
+
+#gif1 {
+  border-radius: 50%;
+  position: absolute;
+  margin-right: 600px;
+  margin-top: 100px;
+}
+
+#gif2 {
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 700px;
+  margin-top: 100px;
+}
+
+.form {
+  position: relative;
+  border-radius: 50px;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form button {
+  margin: 0 0 15px;
+  font-family: 'font-name';
+  text-transform: uppercase;
+  outline: 0;
+  background: rgb(133, 179, 234);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: black;
+  font-size: 17px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #50a3a2;
+}
+
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+
+.form .message a {
+  color: green;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 70px;
+}
+
+.content-user-list-ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-item {
+  margin: 10px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* footer 태그 안에 CSS 속성 */
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(133, 179, 234);
+  color: white;
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-list a {
+  margin: 0px 10px;
+}

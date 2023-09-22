@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'font-name';
+    /*font 이름*/
+    font-style: 'normal';
+    /* font 스타일 정의 (기울임, 일반) */
+    font-weight: 400;
+    /* font 굵기 정의 */
+    /* 브라우저&디바이스 환경에 따른 font 파일 위치 정의 */
+    src: url(../font/YEONGDEOK\ HAEPARANG.TTF);
+    /* IE9 Compat Modes */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    margin: 2px;
+    padding: 11px;
+    text-decoration: none;
+    color: #38598B;
+}
+
+header {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* border: 1px solid; */
+    height: 80px;
+    box-shadow: 1px 0px 8px 2px #A4907C;
+}
+
+.head-bar {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* justify-content: left; */
+    /* height: 80px; */
+}
+
+#logo {
+    width: 250px;
+    height: 80px;
+
+}
+
+.head-menu {
+    display: flex;
+    /* flex-direction: row; */
+    margin-left: auto;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+.menu {
+    /* display: flex; */
+    /* justify-content: right; */
+    /* align-items: flex-end; */
+    padding: 10px;
+    /* margin-left: 1000px; */
+    margin: 5px 20px;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.log {
+    display: flex;
+    justify-content: right;
+    align-self: flex-end;
+}
+
+#login {
+    width: 30px;
+    height: 30px;
+}
+
+/* ---------------------------------------------- */
+
+.container {
+    display: flex;
+    /* width: 960px; */
+    height: 800px;
+    /* margin: 0 auto; */
+}
+
+.content {
+    /* width: 2000px; */
+    /* padding-top: 20px; */
+    margin: 6px auto 0;
+    /* background: lightpink; */
+    /* box-shadow: 0px 0px 20px 3px; */
+}
+
+.images {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#side-menuBtn {
+    background-color: white;
+    border: none;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+    /* 루트가 갖고있는 픽셀기준 1배 */
+    padding: 0.7rem;
+    /* 이동 효과가 부드러워짐 */
+    /* transition: transform 0.5s ease-in-out; */
+    box-shadow: 0.4px 0.4px 4px 1.5px #8d7b68;
+    /* visibility: hidden; */
+}
+
+#side-menuBtn:hover {
+    visibility: visible;
+}
+
+
+#side-bar {
+    border: none;
+    position: fixed;
+    left: 0px;
+    bottom: 80px;
+    width: 170px;
+    /* vh : 현재 보고있는 view의 높이를 100으로 설정 */
+    height: 30vh;
+    padding: 2rem;
+    /* 넓이만큼 화면 밖에 숨기기 */
+    transform: translate(-100%);
+    transition: transform 0.5s ease-in-out;
+    font-size: 16px;
+    font-style: 나눔고딕;
+    font-weight: 500;
+    background-color: lightgreen;
+    font-family: 'font-name';
+}
+
+#side-bar.active {
+    transform: translateX(0);
+}
+
+#side-bar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#side-bar ul li {
+    padding: 1rem 0;
+}
+
+#side-bar ul li a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+/* 사진 자동 슬라이드 */
+.slideshow-container {
+    display: flex;
+    /* justify-content: center;  */
+    position: relative;
+    margin: auto;
+}
+
+.Slidesbackground {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    /* padding: 0; */
+}
+
+.font-on-image {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-family: 'font-name';
+}
+
+.mySlides {
+    /* display: block; */
+    /* border-radius:3%; */
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.slideshow-image {
+    /* border-radius:3%; */
+    /* object-fit:cover; */
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    filter: brightness(70%);
+    /* opacity: 0.8; */
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.petImg {
+    
+    display: flex;
+    width: auto;
+    /* height: 900px; */
+    height: 100vh;
+    margin-top: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+.pets {
+    width: 650px;
+    height: 800px;
+    box-shadow: 0.5px 0.5px 10px 1px #8d7b68;
+}
+
+.packageContainer {
+    width: auto;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.package {
+    width: auto;
+    margin-top: 50px;
+    /* display: flex; */
+}
+
+.package img {
+    width: 400px;
+}
+
+
+.user{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin-left: auto; */
+    position: absolute;
+    right: 0px;
+    width: 380px;
+    height: 100vh;
+    padding: 0 5px 0 0;
+}
+.user .date{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 9px 0 0;
+}
+
+.user .coment{
+    display: flex;
+    margin-top: 400px;
+    justify-content: center;
+    align-self: center;
+}
